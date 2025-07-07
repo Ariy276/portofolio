@@ -93,15 +93,15 @@
       </ul>
       <a href="#contact" class="btn-primary">Hubungi Saya</a>
     </div>
-    <div class="hero-img" data-aos="fade-left">
+    <div class="hero-img">
       <img src="foto-ari.jpg" alt="Ari Damara" />
     </div>
   </header>
 
 <!-- About Section -->
-<section id="about" class="about-section" data-aos="fade-right">
+<section id="about" class="about-section">
   <div class="container">
-    <h2 class="section-title" data-aos="fade-up">Tentang Saya</h2>
+    <h2 class="section-title">Tentang Saya</h2>
     <div class="about-content">
       <p>
         Halo! Saya <strong>Ari Damara</strong>, Saya, Ari Damara, adalah lulusan SMK YAJ jurusan Pengembangan Perangkat Lunak dan Gim (PPLG)  bidang pemrograman dan teknologi digital.
@@ -118,9 +118,12 @@
 <!-- Portfolio Section -->
 <section id="portfolio" class="portfolio-section">
   <div class="container">
-    <h2 class="section-title text-center mb-5" data-aos="fade-up">Galeri Portofolio</h2>
+    <h2 class="section-title text-center mb-5">Galeri Portofolio</h2>
+    
     <div class="gallery">
-      <div class="gallery-item" data-aos="zoom-in">
+
+      <!-- Wisuda -->
+      <div class="gallery-item">
         <img src="foto-arii.jpeg" alt="Wisuda 2025">
         <div class="caption">
           <h3>Wisuda 2025 - SMK YAJ Depok</h3>
@@ -128,7 +131,9 @@
           <p>Saya lulus dari jurusan Pengembangan Perangkat Lunak dan Gim, siap berkontribusi di dunia kerja dan industri teknologi.</p>
         </div>
       </div>
-      <div class="gallery-item" data-aos="zoom-in">
+
+      <!-- Aplikasi Keuangan -->
+      <div class="gallery-item">
         <img src="aplikasi-keuangan.png" alt="Aplikasi Keuangan">
         <div class="caption">
           <h3>Aplikasi Keuangan</h3>
@@ -136,67 +141,83 @@
           <p>Fitur: login user, dashboard, laporan keuangan, dan pencatatan transaksi. Dibangun dengan konsep MVC yang bersih dan efisien.</p>
         </div>
       </div>
-      <div class="gallery-item" data-aos="zoom-in">
+
+      <!-- Aplikasi To-do List -->
+      <div class="gallery-item">
         <img src="aplikasi-todolist.jpeg" alt="Aplikasi To-do List">
         <div class="caption">
           <h3>Aplikasi To-do List</h3>
           <p>Aplikasi sederhana untuk mencatat tugas atau kegiatan harian secara digital. Praktis dan mudah digunakan.</p>
         </div>
       </div>
-      <div class="gallery-item" data-aos="zoom-in">
+
+      <!-- Sertifikat Organisasi -->
+      <div class="gallery-item">
         <img src="sertifikat-organisasi.jpeg" alt="Sertifikat Organisasi">
         <div class="caption">
           <h3>Sertifikat Organisasi</h3>
           <p>Penghargaan atas partisipasi aktif dalam organisasi sekolah sebagai anggota aktif dan bertanggung jawab.</p>
         </div>
       </div>
-      <div class="gallery-item" data-aos="zoom-in">
+
+      <!-- Sertifikat UKOM -->
+      <div class="gallery-item">
         <img src="sertifikat-ukom.jpeg" alt="Sertifikat UKOM">
         <div class="caption">
           <h3>Sertifikat UKOM</h3>
           <p>Sertifikat kelulusan Uji Kompetensi Keahlian (UKOM) sebagai bukti penguasaan keterampilan bidang PPLG.</p>
         </div>
       </div>
-      <div class="gallery-item" data-aos="zoom-in">
+
+      <!-- Sertifikat PKL -->
+      <div class="gallery-item">
         <img src="sertifikat-pkl.jpeg" alt="Sertifikat PKL">
         <div class="caption">
           <h3>Sertifikat PKL</h3>
           <p>Sertifikat Praktik Kerja Lapangan di industri, yang menunjukkan pengalaman kerja nyata dalam pengembangan perangkat lunak.</p>
         </div>
       </div>
+
     </div>
   </div>
 </section>
 
-<!-- Contact Section -->
-<section id="contact" class="contact-section" data-aos="fade-up">
-  <div class="container">
-    <h2 data-aos="fade-up">Kontak Saya</h2>
-    <p>Silakan hubungi saya jika tertarik bekerja sama atau memiliki pertanyaan.</p>
-    <form action="https://formspree.io/f/movwoqqw" method="POST" class="contact-form" data-aos="zoom-in">
-      <input type="text" name="name" placeholder="Nama Anda" required>
-      <input type="email" name="email" placeholder="Email Anda" required>
-      <textarea name="message" placeholder="Pesan Anda" rows="5" required></textarea>
-      <button type="submit" class="btn">Kirim Pesan</button>
-    </form>
-    <div class="contact-info" data-aos="fade-up">
-      <p>Email: aridamara@email.com / ariy0207036@email.com</p>
-      <p>WhatsApp: 08211587660</p>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section" data-aos="fade-up">
+    <div class="container">
+      <h2>Kontak Saya</h2>
+      <p>Silakan hubungi saya jika tertarik bekerja sama atau memiliki pertanyaan.</p>
+      <form action="https://formspree.io/f/movwoqqw" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Nama Anda" required>
+        <input type="email" name="email" placeholder="Email Anda" required>
+        <textarea name="message" placeholder="Pesan Anda" rows="5" required></textarea>
+        <button type="submit" class="btn">Kirim Pesan</button>
+      </form>
+      <div class="contact-info">
+        <p>Email: aridamara@email.com / ariy0207036@email.com</p>
+        <p>WhatsApp: 08211587660</p>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- WhatsApp Button -->
-<a href="https://wa.me/6288211587660" class="wa-float" target="_blank" data-aos="fade-left">
-  <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp">
-</a>
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/6288211587660" class="wa-float" target="_blank">
+    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp">
+  </a>
 
-<!-- Footer -->
-<footer>
-  <p style="text-align: center;">&copy; 2025 Ari Damara</p>
-</footer>
+  <!-- Footer -->
+  <footer>
+    <p style="text-align: center;">&copy; 2025 Ari Damara</p>
+  </footer>
 
-<!-- AOS JS -->
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>
+
+<!-- Script AOS -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>AOS.init();</script>
 </body>
