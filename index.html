@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=1024">
   <title>Ari Damara | Portofolio</title>
@@ -9,19 +8,65 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: white;
+      color: black;
+      margin: 0;
+      padding: 0;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #121212;
+        color: #f5f5f5;
+      }
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .gallery-item {
+      width: 250px;
+      border-radius: 10px;
+      overflow: hidden;
+      background-color: #f9f9f9;
+      transition: transform 0.3s;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      display: block;
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.05);
+    }
+
+    .caption {
+      padding: 10px;
+    }
+
+    .wa-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 100;
+    }
+  </style>
 </head>
-
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
-
-
-
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar">
+  <nav class="navbar" data-aos="fade-down">
     <div class="logo">Portofolio Ari Damara</div>
     <ul class="nav-menu">
       <li><a href="#about">About</a></li>
@@ -31,33 +76,27 @@
     </ul>
   </nav>
 
-  
   <!-- Hero Section -->
-  <header class="hero">
+  <header class="hero" data-aos="fade-up">
     <div class="hero-text">
       <small>lulusan Tahun 2025 SMK PK Yaj Depok</small>
       <h1>Ari Damara</h1>
-      <li>Domisili:  Bogor</li>
-<li>Tempat Tanggal Lahir : Bogor,02 Juli 2006</li>
-<li>Jenis Kelamin  :  Laki-Laki</li>
-<li>Agama    :  Islam</li>
-<li>Pendidikan Trakhir  :  SMK PK YAJ DEPOK</li>
-<li>Status Nikah      :   Belum Menikah</li>
-<li>Alamat:  Kp. Kramat RT/04RW/03 Kelurahan Harapan Jaya Kec.Cibinong Kab.Bogor Jawa Barat.Indonesia </li>
-<li>No.Telp : +6288211587660</li>                                     
-
-      </p>
-      
+      <ul>
+        <li>Domisili:  Bogor</li>
+        <li>Tempat Tanggal Lahir : Bogor, 02 Juli 2006</li>
+        <li>Jenis Kelamin : Laki-Laki</li>
+        <li>Agama : Islam</li>
+        <li>Pendidikan Terakhir : SMK PK YAJ DEPOK</li>
+        <li>Status Nikah : Belum Menikah</li>
+        <li>Alamat: Kp. Kramat RT/04 RW/03, Harapan Jaya, Cibinong, Bogor</li>
+        <li>No.Telp : +6288211587660</li>
+      </ul>
       <a href="#contact" class="btn-primary">Hubungi Saya</a>
     </div>
     <div class="hero-img">
       <img src="foto-ari.jpg" alt="Ari Damara" />
     </div>
   </header>
-
- 
-
-
 
 <!-- About Section -->
 <section id="about" class="about-section">
@@ -144,38 +183,36 @@
 </section>
 
 
-<!-- Contact Section -->
-<section id="contact" class="contact-section">
-  <div class="container">
-    <h2>Kontak Saya</h2>
-    <p>Silakan hubungi saya jika Anda tertarik untuk bekerja sama atau memiliki pertanyaan.</p>
-
-    <form action="https://formspree.io/f/movwoqqw" method="POST" class="contact-form">
-      <input type="text" name="name" placeholder="Nama Anda" required>
-      <input type="email" name="email" placeholder="Email Anda" required>
-      <textarea name="message" placeholder="Pesan Anda" rows="5" required></textarea>
-      <button type="submit" class="btn">Kirim Pesan</button>
-    </form>
-
-    <div class="contact-info">
-      <p>Email: aridamara@email.com</p>
-      <p>WhatsApp: 0812-3456-7890</p>
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section" data-aos="fade-up">
+    <div class="container">
+      <h2>Kontak Saya</h2>
+      <p>Silakan hubungi saya jika tertarik bekerja sama atau memiliki pertanyaan.</p>
+      <form action="https://formspree.io/f/movwoqqw" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Nama Anda" required>
+        <input type="email" name="email" placeholder="Email Anda" required>
+        <textarea name="message" placeholder="Pesan Anda" rows="5" required></textarea>
+        <button type="submit" class="btn">Kirim Pesan</button>
+      </form>
+      <div class="contact-info">
+        <p>Email: aridamara@email.com / ariy0207036@email.com</p>
+        <p>WhatsApp: 08211587660</p>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-
-
-<a href="https://wa.me/6288211587660" class="wa-float" target="_blank">
-  <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp">
-</a>
-
-
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/6288211587660" class="wa-float" target="_blank">
+    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp">
+  </a>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Ari Damara </p>
+    <p style="text-align: center;">&copy; 2025 Ari Damara</p>
   </footer>
 
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
 </html>
